@@ -10,7 +10,7 @@ In order to use the debugging features this workspace provides you need to insta
 
 To run your code without debugging you can use ``` Ctrl + F5 ``` and to run your code with the debugging tools and breakpoints use ``` F5 ```.
 
-To quickly test run your code without using the debug features you can run the task **C: gcc build and run project**, ow you can configure a keybind in your _kenbindings.json_ using:
+To quickly test run your code without using the debug features you can run the task **C: gcc build and run project**, you can configure a keybind in your _keybindings.json_ pasting:
 ```
     {
         "key": "alt+q",
@@ -23,4 +23,4 @@ To quickly test run your code without using the debug features you can run the t
 
 ##### Planned features
 - [ ] Return to old system of creating each .o in order to improve compilation time
-- [ ] Create header new C file with header
+- [ ] Create new C file with matching header
