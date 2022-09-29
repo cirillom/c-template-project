@@ -10,7 +10,7 @@ In order to use the debugging features this workspace provides you need to insta
 
 To run your code without debugging you can use ``` Ctrl + F5 ``` and to run your code with the debugging tools and breakpoints use ``` F5 ```.
 
-To quickly test run your code without using the debug features you can run the task **C: gcc build and run project**, ow you can configure a keybind in your _kenbindings.json_ using:
+To quickly test run your code without using vscode's debug features you can run the task **C: gcc build and run project** or you can configure a keybind in your _keybindings.json_ using:
 ```
     {
         "key": "alt+q",
@@ -20,7 +20,17 @@ To quickly test run your code without using the debug features you can run the t
     },
 ```
 
+There's also a task to create a _.c_ and _.h_ files with a base code, you can run it with **C: new .h and .c file**  or you can configure a keybind in your _keybindings.json_ using:
+```
+    {
+        "key": "alt+d",
+        "command": "workbench.action.tasks.runTask",
+        "args": "C: new .h and .c file",
+        "when": "editorTextFocus"
+    },
+```
+
 
 ##### Planned features
 - [ ] Return to old system of creating each .o in order to improve compilation time
-- [ ] Create header new C file with header
+- [x] Create header new C file with header
