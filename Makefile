@@ -34,7 +34,6 @@ debug: clean
 debug: $(EXECUTABLE)
 
 $(EXECUTABLE): $(CFILES)
-	echo $(INC_PARAMS)
 	@mkdir -p build
 	$(CC) $(CFLAGS) $(INC_PARAMS) -o $@ $^ $(LDFLAGS) $(PDFLAGS)
 
